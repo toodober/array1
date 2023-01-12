@@ -1,0 +1,40 @@
+import java.sql.SQLOutput;
+import java.util.Arrays;
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Колличество сезонов:");
+        int[] season = new int[4];
+        for (int i = 0; i < season.length; i++) {
+            season[i] = i + 1;
+            System.out.println(season[i]);
+        }
+        System.out.println("Колличество месяцев:");
+        int[] mount = new int[12];
+        for (int y = 0; y < mount.length; y++) {
+            mount[y] = y + 1;
+            System.out.println(mount[y]);
+        }
+        System.out.println("Дней в неделю:");
+        int[] week = new int[7];
+        for (int e = 0; e < week.length; e++) {
+            week[e] = e + 1;
+            System.out.println(week[e]);
+        }
+        System.out.println("Дни в месяце:");
+        int[] number = new int[31];
+        for (int o = 0; o < number.length; o++) {
+            number[o] = o + 1;
+            System.out.println(number[o]);
+        }
+// задание 2
+        int[][]mayDaysArray = new int[1][31];
+        for (int z = 0; z < 31; z++) {
+            mayDaysArray[0][z] = z + 1;
+            System.out.println("Month: 5, day:" + mayDaysArray[0][z]);
+        }
+    }
+}
+
+Для меня массивы стали очень хорошим инструментом в работе с большими данными, то есть,не нужно много расписывать а 
+можно удобно расписать в нескольких строчках большой обьем информации.
